@@ -1,3 +1,10 @@
+"""
+Author: Guy Carmeli
+Date: 17/10/2025
+Description:Encrypts messages into text files or/and Decrypts them into the Run Tool Window.
+"""
+
+
 import sys
 import logging
 
@@ -91,7 +98,6 @@ def dec_numbers(input_file):
 
         if nums_of_txt == [""]:
             # Check if file is empty
-            print("File is empty")
             logging.info("The file was empty")
             return ""
 
@@ -101,7 +107,6 @@ def dec_numbers(input_file):
             decrypted_msg_finale += letter  # Append to final string
 
         logging.info(f"Decrypted message is {decrypted_msg_finale}")
-        print(decrypted_msg_finale)
         return decrypted_msg_finale
 
 
@@ -137,7 +142,7 @@ def main():
     arguments = sys.argv[1:]  # Slice parameters to remove script name
     arguments = arguments[0]
 
-    if arguments == 'Encrypt':
+    if arguments == 'encrypt':
         logging.info("The user chose to encrypt the message")
         user_word = input("Enter a word you would like to encrypt: ")
         logging.info(f"User entered word to encrypt: {user_word}")
@@ -148,12 +153,16 @@ def main():
                 "The encrypted message was written to encrypted_msg.txt"
             )
 
-    elif arguments == 'Decrypt':
+    elif arguments == 'decrypt':
         logging.info("The user chose to decrypt the message")
 
         try:
-            with open("encrypted_msg.txt", "r"):
-                dec_numbers('encrypted_msg.txt')
+            if dec_numbers("encrypted_msg.txt") == "":
+                print("The file was empty")
+            else:
+                print(dec_numbers("encrypted_msg.txt"))
+
+
         except FileNotFoundError:
             print("ERROR, file not found")
             logging.error("ERROR, file not found")

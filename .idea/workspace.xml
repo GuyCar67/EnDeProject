@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2109287-1ae2-4579-b71a-13cca6a88bd1" name="Changes" comment="after pep8" />
+    <list default="true" id="d2109287-1ae2-4579-b71a-13cca6a88bd1" name="Changes" comment="after pep8 after push">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EnDeSProject.py" beforeDir="false" afterPath="$PROJECT_DIR$/EnDeSProject.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +69,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EnDeSProject.py" />
-      <option name="PARAMETERS" value="Decrypt" />
+      <option name="PARAMETERS" value="decrypt" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -98,11 +101,20 @@
       <option name="project" value="LOCAL" />
       <updated>1760704235779</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="after pep8 after push">
+      <option name="closed" value="true" />
+      <created>1760704412105</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1760704412105</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="after pep8" />
-    <option name="LAST_COMMIT_MESSAGE" value="after pep8" />
+    <MESSAGE value="after pep8 after push" />
+    <option name="LAST_COMMIT_MESSAGE" value="after pep8 after push" />
   </component>
 </project>
